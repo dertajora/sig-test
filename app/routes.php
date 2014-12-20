@@ -24,4 +24,8 @@ Route::get('maps-places', array('as' => 'maps-places', 'uses' =>'MapsController@
 Route::get('maps-view', array('as' => 'maps-view', 'uses' =>'MapsController@getView'));
 Route::get('maps-static', array('as' => 'maps-static', 'uses' =>'MapsController@getStatic'));
 Route::get('maps-marker', array('as' => 'maps-marker', 'uses' =>'MapsController@getMarker'));
-Route::post('register', array('as' => 'register-research', 'uses' => 'MapsController@postRegister'));
+Route::get('maps-geolocation', array('as' => 'maps-geolocation', 'uses' =>'MapsController@getGeolocation'));
+Route::get('maps-signedin', array('as' => 'maps-signedin', 'uses' =>'MapsController@getSignedin'));
+Route::get('maps-infowindow', array('as' => 'maps-infowindow', 'uses' =>'MapsController@getInfowindow'));
+Route::get('maps-icon', array('as' => 'maps-icon', 'uses' =>'MapsController@getIcon'));
+

@@ -33,8 +33,22 @@ class MapsController extends BaseController {
          return View::make('maps.static'); 
     }
 
-    public function getStatic(){
+    public function getMarker(){
          return View::make('maps.marker'); 
+    }
+    public function getGeolocation(){
+         return View::make('maps.geolocation'); 
+    }
+
+    public function getSignedin(){
+         return View::make('maps.signedin'); 
+    }
+
+    public function getInfowindow(){
+         return View::make('maps.infowindow'); 
+    }
+    public function getIcon(){
+         return View::make('maps.icon'); 
     }
 
     public function getPanduan() {
