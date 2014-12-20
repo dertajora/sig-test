@@ -15,6 +15,13 @@ Route::get('/', function()
 {
 	return View::make('layout.main');
 });
+
 Route::get('maps-test', array('as' => 'maps-test', 'uses' =>'MapsController@getIndex'));
+Route::get('maps-search', array('as' => 'maps-search', 'uses' =>'MapsController@getSearch'));
+Route::get('maps-direction', array('as' => 'maps-direction', 'uses' =>'MapsController@getDirection'));
 Route::get('maps-embed', array('as' => 'maps-embed', 'uses' =>'MapsController@getEmbed'));
+Route::get('maps-places', array('as' => 'maps-places', 'uses' =>'MapsController@getPlaces'));
+Route::get('maps-view', array('as' => 'maps-view', 'uses' =>'MapsController@getView'));
+Route::get('maps-static', array('as' => 'maps-static', 'uses' =>'MapsController@getStatic'));
+Route::get('maps-marker', array('as' => 'maps-marker', 'uses' =>'MapsController@getMarker'));
 Route::post('register', array('as' => 'register-research', 'uses' => 'MapsController@postRegister'));
