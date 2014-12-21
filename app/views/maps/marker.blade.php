@@ -11,6 +11,7 @@
 <script>
  function initialize() {
   var myLatlng = new google.maps.LatLng(-7.771401, 110.378787);
+  var Lat1 = new google.maps.LatLng(-7.774, 110.378787);
   var mapOptions = {
     zoom: 15,
     center: myLatlng
@@ -20,7 +21,15 @@
   var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
+     
       title: 'Kampus Tercinta'
+  });
+
+  var marker1 = new google.maps.Marker({
+      position: Lat1,
+      map: map,
+    
+      title: 'Kampus MIPA'
   });
 
   

@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin</a>
+                <a class="navbar-brand" href="home">Belajar Sistem Informasi Geografis</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -58,10 +58,10 @@
                             <a href="#">
                                 <div class="media">
                                     <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                        <img class="media-object" src="images/50x50.jpg" alt="">
                                     </span>
                                     <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        <h5 class="media-heading"><strong>Arum Sekar Buana</strong>
                                         </h5>
                                         <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
@@ -73,10 +73,10 @@
                             <a href="#">
                                 <div class="media">
                                     <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                        <img class="media-object" src="images/50x50.jpg" alt="">
                                     </span>
                                     <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        <h5 class="media-heading"><strong>Fadasa Rizki Barata</strong>
                                         </h5>
                                         <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
@@ -88,10 +88,10 @@
                             <a href="#">
                                 <div class="media">
                                     <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                        <img class="media-object" src="images/50x50.jpg" alt="">
                                     </span>
                                     <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        <h5 class="media-heading"><strong>Dzimar Akbarur</strong>
                                         </h5>
                                         <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
@@ -105,7 +105,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">1&nbsp<i class="fa fa-bell"></i> <b class="caret"></b></a>
                     <ul class="dropdown-menu alert-dropdown">
                         <li>
                             <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
@@ -132,7 +132,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>Derta Isyajora <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -154,9 +154,68 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <a href="home"><i class="fa fa-fw fa-home"></i> Home</a>
                     </li>
                     <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#maps-javascript"><i class="fa fa-fw fa-dashboard"></i> Google Maps Javascript <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="maps-javascript" class="collapse">
+                            <li>
+                                <a href="maps-geolocation">Geolocation</a>
+                            </li>
+                            <li>
+                                <a href="maps-icon">With Icon</a>
+                            </li>
+                            <li>
+                                <a href="maps-infowindow">Info Window</a>
+                            </li>
+                            <li>
+                                <a href="maps-marker">Marker</a>
+                            </li>
+                            <li>
+                                <a href="maps-marker">Signed-In</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#maps-embed"><i class="fa fa-fw fa-dashboard"></i> Google Maps Embed <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="maps-embed" class="collapse">
+                            <li>
+                                <a href="maps-embed">Embed</a>
+                            </li>
+                            <li>
+                                <a href="maps-direction">Direction</a>
+                            </li>
+                            <li>
+                                <a href="maps-places">Places</a>
+                            </li>
+                             <li>
+                                <a href="maps-search">Search</a>
+                            </li>
+                            <li>
+                                <a href="maps-static">Static</a>
+                            </li>
+                             <li>
+                                <a href="maps-staticdouble">Static Double</a>
+                            </li>
+                            <li>
+                                <a href="maps-view">View</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#openstreet"><i class="fa fa-fw fa-dashboard"></i> Openstreet <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="openstreet" class="collapse">
+                            <li>
+                                <a href="#">Embed</a>
+                            </li>
+                            <li>
+                                <a href="#">Embed & Marker</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                   <!--  <li>
                         <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
                     </li>
                     <li>
@@ -171,23 +230,13 @@
                     <li>
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
                     </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                        </ul>
-                    </li>
+                    
                     <li>
                         <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
                     </li>
                     <li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
