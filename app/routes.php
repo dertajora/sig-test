@@ -15,7 +15,7 @@ Route::get('/', function()
 {
 	return View::make('layout.main');
 });
-
+//ini google maps
 Route::get('maps-test', array('as' => 'maps-test', 'uses' =>'MapsController@getIndex'));
 Route::get('maps-search', array('as' => 'maps-search', 'uses' =>'MapsController@getSearch'));
 Route::get('maps-direction', array('as' => 'maps-direction', 'uses' =>'MapsController@getDirection'));
@@ -28,4 +28,8 @@ Route::get('maps-geolocation', array('as' => 'maps-geolocation', 'uses' =>'MapsC
 Route::get('maps-signedin', array('as' => 'maps-signedin', 'uses' =>'MapsController@getSignedin'));
 Route::get('maps-infowindow', array('as' => 'maps-infowindow', 'uses' =>'MapsController@getInfowindow'));
 Route::get('maps-icon', array('as' => 'maps-icon', 'uses' =>'MapsController@getIcon'));
+Route::get('maps-staticdouble',array('as' => 'maps-staticdouble','uses'=>'MapsController@getStaticdouble'));
 
+//ini openstreet
+Route::get('maps-openstreet',array('as' => 'maps-openstreet','uses'=>'OpenstreetController@getOpenstreet'));
+Route::get('openstreet-embed',array('as' => 'openstreet-embed','uses'=>'OpenstreetController@getEmbed'));

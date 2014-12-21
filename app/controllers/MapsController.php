@@ -51,6 +51,11 @@ class MapsController extends BaseController {
          return View::make('maps.icon'); 
     }
 
+    public function getStaticdouble(){
+         return View::make('maps.static_double'); 
+    }
+    
+   
     public function getPanduan() {
     // I'm creating an array with user's info but most likely you can use $user->email or pass $user object to closure later
   
