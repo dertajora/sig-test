@@ -15,6 +15,17 @@ Route::get('home', function()
 {
 	return View::make('layout.main');
 });
+Route::get('/', function()
+{
+	return View::make('layout.main');
+});
+
+//ini google maps
+Route::get('dashboard', array('as' => 'dashboard', 'uses' =>'DashboardController@getIndex'));
+Route::get('draggable', array('as' => 'draggable', 'uses' =>'DashboardController@getDraggable'));
+Route::post('post-draggable', array('as' => 'post-draggable', 'uses' =>'DashboardController@postDraggable'));
+
+
 //ini google maps
 Route::get('maps-test', array('as' => 'maps-test', 'uses' =>'MapsController@getIndex'));
 Route::get('maps-search', array('as' => 'maps-search', 'uses' =>'MapsController@getSearch'));
@@ -29,7 +40,15 @@ Route::get('maps-signedin', array('as' => 'maps-signedin', 'uses' =>'MapsControl
 Route::get('maps-infowindow', array('as' => 'maps-infowindow', 'uses' =>'MapsController@getInfowindow'));
 Route::get('maps-icon', array('as' => 'maps-icon', 'uses' =>'MapsController@getIcon'));
 Route::get('maps-staticdouble',array('as' => 'maps-staticdouble','uses'=>'MapsController@getStaticdouble'));
+Route::get('maps-doubleinfo',array('as' => 'maps-doubleinfo','uses'=>'MapsController@getDoubleinfo'));
 
 //ini openstreet
 Route::get('maps-openstreet',array('as' => 'maps-openstreet','uses'=>'OpenstreetController@getOpenstreet'));
 Route::get('openstreet-embed',array('as' => 'openstreet-embed','uses'=>'OpenstreetController@getEmbed'));
+
+//ini menggunakan database
+Route::get('database-first',array('as' => 'database-first','uses'=>'DatabaseController@getFirst'));
+
+//ini buat coba login
+Route::get('login',array('as' => 'login','uses'=>'LoginController@getLogin'));
+Route::get('drag',array('as' => 'drag','uses'=>'LoginController@getDrag'));

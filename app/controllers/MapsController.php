@@ -54,6 +54,9 @@ class MapsController extends BaseController {
     public function getStaticdouble(){
          return View::make('maps.static_double'); 
     }
+    public function getDoubleinfo(){
+         return View::make('maps.ageng'); 
+    }
     
    
     public function getPanduan() {
